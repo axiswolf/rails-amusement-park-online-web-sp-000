@@ -13,7 +13,7 @@ class UsersController < ApplicationController
         session[:user_id] = @user.id
         redirect_to user_path(@user)
     end
-    
+
     def show
         if session[:user_id]
             @user = User.find(session[:user_id])
