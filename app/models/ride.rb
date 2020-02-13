@@ -1,4 +1,5 @@
 class Ride < ActiveRecord::Base
+<<<<<<< HEAD
     belongs_to :attraction
     belongs_to :user
 
@@ -34,5 +35,7 @@ class Ride < ActiveRecord::Base
         self.user.save
 
     end
+=======
+>>>>>>> 4293e396b5f534918e97fa9e133fb0fb60e6578e
 
 end

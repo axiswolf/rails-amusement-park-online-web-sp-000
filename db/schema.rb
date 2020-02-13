@@ -10,7 +10,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 2020_02_12_124933) do
+=======
+ActiveRecord::Schema.define(version: 2020_02_12_102606) do
+>>>>>>> 4293e396b5f534918e97fa9e133fb0fb60e6578e
 
   create_table "attractions", force: :cascade do |t|
     t.string "name"
@@ -20,6 +24,7 @@ ActiveRecord::Schema.define(version: 2020_02_12_124933) do
     t.integer "min_height"
   end
 
+<<<<<<< HEAD
   create_table "rides", force: :cascade do |t|
     t.integer "attraction_id"
     t.integer "user_id"
@@ -33,6 +38,16 @@ ActiveRecord::Schema.define(version: 2020_02_12_124933) do
     t.integer "tickets"
     t.integer "height"
     t.boolean "admin", default: false
+=======
+  create_table "users", force: :cascade do |t|
+    t.string "name"
+    t.string "password"
+    t.integer "happiness"
+    t.integer "nausea"
+    t.integer "tickets"
+    t.integer "height"
+    t.boolean "admin"
+>>>>>>> 4293e396b5f534918e97fa9e133fb0fb60e6578e
   end
 
 end
