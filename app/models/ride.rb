@@ -17,8 +17,8 @@ class Ride < ActiveRecord::Base
              return "Sorry. You do not have enough tickets to ride the Roller Coaster. You are not tall enough to ride the Roller Coaster."
         end
 
-    
-        if self.attraction.tickets > self.user.tickets 
+
+        if self.attraction.tickets > self.user.tickets
             return "Sorry. You do not have enough tickets to ride the #{attraction.name}."
         end
 
