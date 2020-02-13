@@ -1,5 +1,5 @@
 class User < ActiveRecord::Base
-<<<<<<< HEAD
+
     has_secure_password
     has_many :rides
     has_many :attractions, through: :rides
@@ -16,7 +16,4 @@ class User < ActiveRecord::Base
         # self.nausea > self.happiness ? 'sad' : 'happy'
     end
 
-=======
-  has_many :attractions, through: :rides
->>>>>>> 4293e396b5f534918e97fa9e133fb0fb60e6578e
 end
